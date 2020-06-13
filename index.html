@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charlyflix</title>
+  <link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">
+  <style>
+
+    :root {
+      --purple: #5E1DFC;
+      --purple-mid: #8F57FD;
+      --purple-light: #AB88FF;
+      --mint: #21c08b;
+    }
+
+    * {
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Muli', sans-serif;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    body {
+      width: 100%;
+      height: 100vh;
+      background-color: var(--purple-mid);
+      color: white;
+    }
+
+    .header {
+      width: 100%;
+      height: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 24px;
+    }
+
+    .header__brand {
+      height: 50px;
+    }
+
+    .header__profile-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .header__profile:hover  .header__profile-menu {
+      display: block;
+    }
+
+    .header__profile-info-img {
+      margin-right: 16px;
+    }
+
+    .header__profile-menu {
+      display: none;
+      position: absolute;
+      width: 150px;
+      padding: 0;
+      right: 24px;
+    }
+
+    .header__menu-link {
+        height: 100%;
+        display: block;
+        height: 30px;
+        text-align: right;
+        padding: 8px;
+    }
+
+    .header__menu-link:hover {
+        text-decoration: underline;
+    }
+
+    
+  </style>
+</head>
+<body>
+    <header class="header">
+      <img class='header__brand' src="./img/full-logo.png" alt="Logo">
+      <div class="header__profile">
+        <div class="header__profile-info">
+          <img class='header__profile-info-img' src="./img/user-icon.png" alt="user icon">
+          <div class="header__profile-info-title">Perfil</div>
+        </div>
+        <ul class="header__profile-menu">
+            <li class="header__menu-item"> <a class='header__menu-link' href="#">Cuenta</a> </li>
+            <li class="header__menu-item"> <a class='header__menu-link' href="#">Cerrar Sesión</a> </li>
+        </ul>
+      </div>
+    </header>
+</body>
+</html>
